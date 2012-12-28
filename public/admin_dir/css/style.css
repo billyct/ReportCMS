@@ -1,0 +1,162 @@
+body {
+	font-family: "微软雅黑";
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.option-li {
+	line-height: 30px;
+	min-height: 30px;
+}
+
+.pull-inherit {
+	float: inherit;
+}
+
+.opacity9 {
+	opacity: 0.9;
+}
+
+.editable-option-textarea {
+	display: inline-block;
+}
+
+.navbar .brand {
+    margin-left: 0;
+    padding: 5px 20px 12px 10px;
+}
+
+.hero-unit p {
+	font-size: 12px;
+}
+
+.help-inline {
+	padding-bottom: 10px;
+}
+
+.taskable_content {
+	height: 90px;
+}
+
+
+#loading-block {
+	position:fixed;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+	background-color:#000000;
+	background-image:url(../images/loading.gif);
+	background-position:center center;
+	background-repeat:no-repeat;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	z-index:1000;
+}
+
+.side-nav ul li {
+	width: 105px;
+}
+
+/*任务列表*/
+ul.taskables_layout{
+	position:relative;
+	margin:0;
+	padding:0
+}
+ul.taskables_layout li{
+	float:left;
+	width:100%;
+	list-style:none;
+	position:relative
+}
+ul.taskables_layout li.left{
+	padding-left:80px;
+}
+/*ul.taskables_layout li.right{
+	padding-right:75px
+}
+ul.taskables_layout li.right .avatar{
+	right:0;
+	left:auto
+}
+ul.taskables_layout li.right .taskable_wrap .arrow{
+	right:-12px;
+	left:auto;
+	background-position:0 -213px;
+	height:15px;
+	width:12px
+}*/
+ul.taskables_layout li.by_myself .taskable_wrap{
+	border:1px solid #b3cdf8
+}
+ul.taskables_layout li.by_myself .taskable_wrap .info a.name{
+	color:#4a8cf7
+}
+ul.taskables_layout li a.avatar{
+	position:absolute;
+	left:0;
+	top:0
+}
+ul.taskables_layout li a.avatar img{
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px
+}
+ul.taskables_layout li .taskable_wrap{
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	position:relative;
+	border:1px solid #e9e9e9;
+	padding:10px;
+	border:1px solid #cbcbcb;
+	margin-bottom:20px;
+	float:left;
+	/*width:100%;*/
+	background:#fefefe;
+	-webkit-box-shadow:rgba(0,0,0,0.1) 0 1px 0px;
+	-moz-box-shadow:rgba(0,0,0,0.1) 0 1px 0px;
+	box-shadow:rgba(0,0,0,0.1) 0 1px 0px
+}
+ul.taskables_layout li .taskable_wrap .arrow{
+	background-position:0 -228px;
+	height:15px;width:12px;
+	position:absolute;
+	left:-12px;top:13px
+}
+ul.taskables_layout li .taskable_wrap .info{
+	float:left;width:100%;
+	border-bottom:1px solid #fff;
+	line-height:23px
+}
+ul.taskables_layout li .taskable_wrap .info .name{
+	float:left;
+	font-weight:bold;
+	color:#483734
+}
+ul.taskables_layout li .taskable_wrap .info .time{
+	float:left;
+	font-size:11px;
+	margin-left:6px
+}
+ul.taskables_layout li .taskable_wrap .text{
+	float:left;
+	width:100%;
+	border-top:1px solid #cfcfcf;
+	padding-top:5px;
+}
+
+.icons-sprite, .fc-header-left .fc-button-prev .fc-button-inner, 
+.fc-header-left .fc-button-next .fc-button-inner, div.checker span, 
+div.checker span.checked, div.radio span, div.radio span.checked, 
+.ui-datepicker .ui-datepicker-prev .ui-icon, 
+.ui-datepicker .ui-datepicker-prev.ui-state-hover .ui-icon, 
+.ui-datepicker .ui-datepicker-next .ui-icon, 
+.ui-datepicker .ui-datepicker-next.ui-state-hover .ui-icon, 
+.arrow, 
+#header .breadcrumbs ul li .arrow, #main .container_top form .input-append button.btn_search {
+	background : url("../images/icons-sa7c41345d9.png") no-repeat scroll 0 0 transparent;
+}

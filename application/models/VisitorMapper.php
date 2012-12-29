@@ -123,6 +123,26 @@ class VisitorMapper extends CI_Model {
 	
 		return $result;
 	}
+	
+	public function get_all_visitors() {
+		$this->db->select();
+		$query_visitors = $this->db->get('visitor');
+		return $query_visitors->result_array();
+	}
+	
+	public function delete($id) {
+		$resultback = $this->resultback;
+		try {
+			$this->db->delete('visitor', array('id' => $id));
+			$this->db->delete('answer', array('visitor_id' => $id));
+			
+			$resultback->setCM($resultback::success, '删除提交者成功');
+		} catch (Exception $e) {
+			$resultback->setCM($resultback::error, '删除提交者失败');
+		}
+		
+		return $resultback->getCM();
+	}
 }
 
 ?>

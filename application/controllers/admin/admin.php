@@ -8,6 +8,7 @@ class Admin extends CI_Controller {
 		$this->load->model('TopicMapper');
 		$this->load->model('QuestionMapper');
 		$this->load->model('OptionMapper');
+		$this->load->model('VisitorMapper');
 		$this->load->library('ResultBack', 'resultback');
 		//$this->load->library('qqFileUploader');
 	}
@@ -18,6 +19,8 @@ class Admin extends CI_Controller {
 			$data['topics'] = $this->TopicMapper->get_all_topics();
 			$data['questions'] = $this->QuestionMapper->get_all_questions();
 			$data['options'] = $this->OptionMapper->get_all_options();
+			$data['visitors'] = $this->VisitorMapper->get_all_visitors();
+			
 			$this->load->view('admin/main', $data);
 		}else {
 			$this->load->view('admin/login');

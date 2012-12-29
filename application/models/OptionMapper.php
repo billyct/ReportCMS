@@ -66,7 +66,7 @@ class OptionMapper extends CI_Model {
 		$resultback = $this->resultback;
 		try {
 			$this->db->delete('option', array('id' => $id));
-			$this->db->delete('question_option', array('option_id'=>$id));
+			// $this->db->delete('question_option', array('option_id'=>$id));
 			$resultback->setCM($resultback::success, '删除选项成功');
 		} catch (Exception $e) {
 			$resultback->setCM($resultback::error, '删除选项失败');

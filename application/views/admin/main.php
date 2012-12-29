@@ -200,6 +200,33 @@
 
 		<div class="span10 div_href" id="div_stat" style="display:none">
 			<h1>统计管理</h1>
+			<table class="table table-striped">
+				<thead>
+					<th>#</th>
+					<th>ip地址</th>
+					<th>提交问卷时间</th>
+					<th>操作</th>
+				</thead>
+				<tbody>
+					<?php foreach ($visitors as $visitor) { ?>
+						<tr>
+							<th>
+								<?php echo $visitor['id'] ?>
+							</th>
+							<td>
+								<?php echo $visitor['ip'] ?>
+							</td>
+							<td>
+								<?php echo $visitor['create_at'] ?>
+							</td>
+							<td class="delete_link" data="<?php echo $visitor['id'] ?>" href="<?php echo base_url('admin/visitor/delete_visitor')?>">
+								<a class="opacity9 close pull-inherit" rel="tooltip" title="删除提交者">&times;</a>
+							</td>
+						</tr>
+					<?php } ?>
+					
+				</tbody>
+			</table>
 		</div>
 
 	</div>

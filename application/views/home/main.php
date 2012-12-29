@@ -21,7 +21,7 @@
                             <span>
                                 Hello, I’m billyct
                                 <br>
-                                调查问卷的作业成果。</span>
+                                JSP课程设计成果。</span>
                         </h2>
                         <p class="hi"></p>
                     </div>
@@ -30,7 +30,7 @@
                             <span class="u1">
                                 <span class="name-icon"></span>
                             </span>
-                            <span class="u2 first">billyct</span>
+                            <span class="u2 first">billyct，刘捷，李野川</span>
                         </p>
                         <p class="myInfo">
                             <span class="u1">

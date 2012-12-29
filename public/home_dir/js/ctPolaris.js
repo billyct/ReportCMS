@@ -6,10 +6,7 @@ $(document).ready(function () {
 	$("#slideContainer").ctMpress({
 		mode: mode
 	}).bind("show", function (e, id) {
-		if (id == "#portfolio") {
-			launchQuicksand();
-			loadAndLaunchThickbox()
-		}
+
 		// if ($('.pieChart').children().length == 0){
 		// 	launchChart();
 		// }

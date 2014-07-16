@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 	$('#btn-submit-answer').live('click', function(){
-			
+
 		var fields = $(".question select, .question :radio,.question :checkbox,.question textarea").serializeArray();
 		var answers = new Array();
 		var topic_id = $(this).attr('data');
@@ -15,7 +15,7 @@ $(document).ready(function () {
 		  });
 		});
 
-		$.post('http://r.localhost/visitor/submit', {
+		$.post('http://localhost:8000/visitor/submit', {
 			answers: answers
 		}, function(data){
 			if (data.code == 1) {

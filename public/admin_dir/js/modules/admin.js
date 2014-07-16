@@ -3,12 +3,12 @@ define(function(require, exports, module) {
     var $ = require('jquery');
     var alert = require('apprise');
     require('bootstrap/bootstrap-tooltip')($);
-    
+
     // exports.nav = function(){
     //     $('.nav li').hover(
     //         function() {
     //             $(this).addClass('active');
-    //         }, 
+    //         },
     //         function() {
     //             if (!$(this).hasClass('current_link')) {
     //                 $(this).removeClass('active');
@@ -58,6 +58,6 @@ define(function(require, exports, module) {
         });
     }
 
-    exports.base_url = "http://r.localhost/admin/";
+    exports.base_url = "http://localhost:8000/admin/";
 
 });

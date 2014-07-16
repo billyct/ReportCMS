@@ -16,7 +16,7 @@
 						<?php foreach ($stats as $stat) { ?>
 							<div class="question" id="test">
 								<h3>
-									<?php 
+									<?php
 								      	switch ($stat['type']) {
 									      	case 1:
 									      		echo "单选题";
@@ -33,8 +33,8 @@
 							      	}?>
 									<span><?php echo $stat['title'] ?></span>
 								</h3>
-								
-							
+
+
 								<div class="skillContainer">
 									<ul class="skill clearfix">
 										<?php foreach ($stat['options'] as $option) { ?>
@@ -48,11 +48,11 @@
 
 							</div>
 						<?php } ?>
-						<hr />
-						
+
+
 
 					</div>
-					
+
 				</div>
 				<div class="row-fluid">
 					<div class="span12 footer"></div>

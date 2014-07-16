@@ -1,5 +1,5 @@
 seajs.config({
-	base: 'http://r.localhost/admin_dir',
+	base: 'http://localhost:8000/admin_dir',
 	alias: {
     	jquery:'js/libs/jquery/1.8.1/jquery',
         jqueryPlugins: 'js/plugins/jquery',

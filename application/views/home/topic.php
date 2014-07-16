@@ -15,7 +15,7 @@
 						<?php foreach ($questions as $question) { ?>
 							<div class="question">
 								<h3>
-									<?php 
+									<?php
 								      	switch ($question['type']) {
 									      	case 1:
 									      		echo "单选题";
@@ -47,7 +47,7 @@
 									</p>
 								<?php } ?>
 								<?php foreach ($options[$question['id']] as $option) { ?>
-								
+
 									<?php if($question['type'] == 1) { ?>
 									<label class="radio">
 										<input type="radio" name="question<?php echo $question['id'] ?>" value="<?php echo $option['id'] ?>" />
@@ -62,16 +62,16 @@
 									</label>
 									<?php } ?>
 
-									
+
 								<?php } ?>
-								
+
 							</div>
 						<?php } ?>
-						<hr />
+
 						<a href="#" class="btn" data="<?php echo $topic['id'] ?>" id="btn-submit-answer">提交</a>
 
 					</div>
-					
+
 				</div>
 				<div class="row-fluid">
 					<div class="span12 footer"></div>
@@ -79,5 +79,5 @@
 			</div>
 		</div>
 	</div>
-	
+
 </div>

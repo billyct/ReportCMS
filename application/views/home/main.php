@@ -21,7 +21,18 @@
                             <span>
                                 Hello, I’m billyct
                                 <br>
-                                JSP课程设计成果。</span>
+                                WHAT a FUCK!
+                                <br>
+                                NO ZUO NO DIE!
+                                <br>
+                                BE HAPPY TO SEE YOU!
+                                <br>
+                                SO WHAT I MEAN?
+                                <br>
+                                Can I show this for face Exam?
+                                <br>
+                                TOO low?
+                            </span>
                         </h2>
                         <p class="hi"></p>
                     </div>
@@ -71,7 +82,7 @@
     <?php foreach ($topics as $topic) { ?>
         <div class="step" id="topic<?php echo $topic['id'] ?>"></div>
     <?php } ?>
-    
+
 </div>
 
 <?php include_once __DIR__.'/../layout/home_footer.php' ?>

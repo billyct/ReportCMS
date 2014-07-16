@@ -1,5 +1,7 @@
 ## 一个调查问卷程序，有后台，有酷炫前台
 
+![image](https://github.com/billyct/ReportCMS/raw/master/screenshots/report.png)
+
 ```bash
 git clone https://github.com/billyct/ReportCMS.git
 cd ReportCMS
